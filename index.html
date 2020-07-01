@@ -67,7 +67,7 @@
           эффективные решения<br />
           для вашего бизнеса
         </h1>
-        <a class="button primary" href="">Заказать услугу</a>
+        <button data-modal-open class="button primary">Заказать услугу</button>
       </section>
       <!--Наши функции-->
       <section class="section">
@@ -376,6 +376,12 @@
           </ul>
         </div>
       </section>
+
+      <div data-modal class="backdrop is-hidden">
+<div class="modal">
+  <button data-modal-close >Закрыть</button>
+</div>
+      </div>
     </main>
     <!-- Подвал страницы -->
     <footer>
@@ -438,13 +444,14 @@
         </div>
         <div class="container-form">
           <span class="footer-text"><b>Подпишитесь на рассылку</b></span>
-          <a class="button primary" href="">Подписаться
+          <button class="button primary">Подписаться
             <svg class="subscribe-icon" width="24" height="24">
               <use href="./images/sprite.svg#icon-subscribe"></use>
             </svg>
-          </a>
+          </button>
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
