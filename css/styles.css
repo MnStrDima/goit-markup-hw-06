@@ -50,10 +50,6 @@ body {
 }
 /* Навигация сайта*/
 
-.page-header {
-  border-bottom: 1px solid #ececec;
-}
-
 .site-navigation {
   list-style-type: none;
   margin-top: 0;
