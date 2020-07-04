@@ -944,8 +944,13 @@ footer {
 }
 
 .checkbox-label {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 20px;
+}
+
+.label-text {
   color: var(--features-header-contacts-color);
 }
 
@@ -955,6 +960,53 @@ footer {
 
 .checkbox-icon {
   display: inline-block;
+  margin-right: 7px;
   width: 16px;
   height: 15px;
+  background-color: #ffffff;
+  border: 2px solid #212121;
+  border-radius: 2px;
+}
+
+.checkbox:checked + .checkbox-icon {
+  background-color: var(--button-background-links-color);
+  border: 2px solid var(--button-background-links-color);
+  border-radius: 2px;
+  background-image: url(../images/icon-modal-check.svg);
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.footer-form {
+  margin-top: 20px;
+}
+
+.footer-form-input {
+  width: 358px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 1.25;
+  padding: 15px 16px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+/* .footer-form-label {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+} */
+
+.footer-form .button.primary {
+  margin-left: 12px;
 }

@@ -422,13 +422,14 @@
 </label>
 <label class="checkbox-label">
 <input type="checkbox" class="checkbox" name="privacy">
-<span class="checkbox-icon"><svg class="checkbox-svg" width="16" height="15">
-  <use href="./images/sprite.svg#icon-modal-check"></use> 
-</svg></span>
-Соглашаюсь с рассылкой и принимаю 
-  <a class="checkbox-link" href=""> Условия договора</a></label>
+<span class="checkbox-icon"></span>
+<span class="label-text">
+  Соглашаюсь с рассылкой и принимаю 
+  <a class="checkbox-link" href=""> Условия договора</a>
+</span>
+</label>
 
-  <button class="button primary ">Отправить</button>
+  <button class="button primary">Отправить</button>
 </form>
 </div>
       </div>
@@ -494,11 +495,17 @@
         </div>
         <div class="container-form">
           <span class="footer-text"><b>Подпишитесь на рассылку</b></span>
-          <button class="button primary">Подписаться
+          <form class="footer-form">
+            <label class="footer-form-field">
+  <input type="email" class="footer-form-input" name="name" placeholder="Email">
+<!-- <span class="footer-form-label">Email</span> -->
+</label>
+            <button class="button primary">Подписаться
             <svg class="subscribe-icon" width="24" height="24">
               <use href="./images/sprite.svg#icon-subscribe"></use>
             </svg>
           </button>
+          </form>
         </div>
       </div>
     </footer>
