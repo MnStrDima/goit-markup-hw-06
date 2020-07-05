@@ -812,6 +812,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #ffffff;
   border: none;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -837,9 +838,11 @@ footer {
 
 .comment-label {
   position: absolute;
-  top: 0;
+  top: 12px;
   left: 16px;
-  transform: translate(0, 50%);
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  transform: translate(0, 0);
   color: var(--features-header-contacts-color);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -864,7 +867,7 @@ footer {
 .form-field:focus-within > .comment-label,
 .comment-input:not(:placeholder-shown) + .comment-label {
   font-size: 12px;
-  transform: translateY(-80%);
+  transform: translateY(-30px);
   color: var(--button-background-links-color);
 }
 
@@ -888,7 +891,8 @@ footer {
 .form-field:focus-within > .form-label,
 .form-input:not(:placeholder-shown) + .form-label {
   font-size: 12px;
-  transform: translate(-26px, -250%);
+  line-height: 1.14;
+  transform: translate(-26px, -38px);
   color: var(--button-background-links-color);
 }
 
@@ -900,7 +904,7 @@ footer {
   position: absolute;
   top: 50%;
   left: 42px;
-  transform: translate(0, -50%);
+  transform: translateY(-50%);
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: var(--features-header-contacts-color);
@@ -928,7 +932,13 @@ footer {
   display: block;
 }
 
-.form-field:not(:first-child) {
+.form-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.form-item:not(:first-child) {
   margin-top: 28px;
 }
 
